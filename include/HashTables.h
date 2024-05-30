@@ -42,7 +42,7 @@ namespace nestea {
 	public:
 		int hash_function(const K& key, size_t _size) {
 			double A = (sqrt(5) - 1) / 2;
-			double result = _size * std::fmod((key * A), 1);
+			int result = _size * std::fmod((key * A), 1);
 			return result;
 		}
 
@@ -80,9 +80,8 @@ namespace nestea {
 			size_t index = hash_function(_key, this->size);
 			Pair<K, V> element(_key, _value);
 			int i = 1;
-			while (data[index].empty != true) {
+			while (data[index].empty != true)
 				index = fmod(index + i, this->size);
-			}
 			data[index] = element;
 			count++;
 		}
@@ -91,9 +90,60 @@ namespace nestea {
 			return count;
 		}
 
-		void insert_or_assign(K _key, V _value);
-		bool contains(V _value);
-		V* search(K _key) {}
-		bool erase(K _key);
+		void insert_or_assign(K _key, V _value) {
+			V* c = search(_key);
+			if (!c)
+				insert(_key, _value);
+			else
+				*c = _value;
+		}
+
+		bool contains(V _value) {
+			for (const auto& pair : data) {
+				if (pair.value == _value)
+					return true;
+			}
+			return false;
+		}
+
+		V* search(K _key) {
+			size_t index = hash_function(_key, this->size);
+			size_t i = 1;
+			while (data[index].empty == false || data[index].deleted == true) {
+				if (data[index].key == _key)
+					return &data[index].value;
+				index = fmod(index + i, this->size);
+			}
+			return nullptr;
+		}
+
+		bool erase(K _key) {
+			if (search(_key) == nullptr)
+				return false;
+			else {
+				size_t index = hash_function(_key, this->size);
+				int i = 1;
+				while (data[index].key != _key) {
+					index = fmod(index + i, this->size);
+				}
+				data[index].key = 0;
+				data[index].value = 0;
+				data[index].empty = true;
+				data[index].deleted = true;
+				this->count--;
+				return true;
+			}
+		}
+
+		int counts(K _key) {
+			size_t index = hash_function(_key, this->size);
+			int number = 0;
+			for (const auto& pair : data) {
+				if (data[index].empty == false)
+					if (index == hash_function(pair.key, this->size))
+						number++;
+			}
+			return number;
+		}
 	};
 }
