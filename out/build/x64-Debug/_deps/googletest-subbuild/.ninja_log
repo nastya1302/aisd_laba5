@@ -1,0 +1,21 @@
+# ninja log v5
+4685	4818	7362678605065888	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	ecd72953cbeb2755
+2	196	7362678558844018	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	c20788ec066c598b
+4272	4407	7362678600953433	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	f479c986d28032a3
+2	196	7362678558844018	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	c20788ec066c598b
+4407	4555	7362678602385627	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	fb1da7c90a4fdb21
+197	4272	7362678599621359	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	2853972c5faf9c8a
+197	4272	7362678599621359	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	2853972c5faf9c8a
+4272	4407	7362678600953433	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	f479c986d28032a3
+4685	4818	7362678605065888	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	ecd72953cbeb2755
+4970	5113	7362678608027391	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	abe294bb1fbb8eb4
+4407	4555	7362678602385627	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	fb1da7c90a4fdb21
+4555	4685	7362678603757934	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	ca6fcf5611eaa929
+5113	5290	7362678609797651	CMakeFiles/googletest-populate-complete	f2a2c1410d46fa09
+4555	4685	7362678603757934	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	ca6fcf5611eaa929
+4818	4970	7362678606449172	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	2f4815e24336205f
+4818	4970	7362678606449172	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	2f4815e24336205f
+4970	5113	7362678608027391	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	abe294bb1fbb8eb4
+5113	5290	7362678609797651	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	f2a2c1410d46fa09
+5113	5290	7362678609797651	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	f2a2c1410d46fa09
+5113	5290	7362678609797651	C:/Users/nasty/source/repos/aisd_laba5/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	f2a2c1410d46fa09
