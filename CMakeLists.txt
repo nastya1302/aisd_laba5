@@ -24,3 +24,5 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(tests "tests/HashTables_tests.cc")
 target_link_libraries(tests HashTables GTest::gtest_main)
+add_executable(task "src/HashTables.cc")
+target_link_libraries(task HashTables)

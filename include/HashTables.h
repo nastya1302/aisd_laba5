@@ -136,12 +136,10 @@ namespace nestea {
 		}
 
 		int counts(K _key) {
-			size_t index = hash_function(_key, this->size);
 			int number = 0;
 			for (const auto& pair : data) {
-				if (data[index].empty == false)
-					if (index == hash_function(pair.key, this->size))
-						number++;
+				if (pair.key == _key && pair.empty == false)
+					number++;
 			}
 			return number;
 		}

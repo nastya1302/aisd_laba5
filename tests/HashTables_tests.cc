@@ -107,14 +107,15 @@ TEST(HashTable_tests, contains) {
 }
 
 TEST(HashTable_tests, counts) {
-	HashTable<int, int> ht(7);
+	HashTable<int, int> ht;
 	ht.insert(0, 1);
 	ht.insert(0, 2);
 	ht.insert(8, 3);
 	ht.insert(8, 4);
 	ht.insert(8, 5);
+	ht.insert(0, 2);
 	ht.insert(2, 6);
 	ht.print();
-	int number = ht.counts(8);
+	int number = ht.counts(0);
 	cout << number << "\n";
 }
